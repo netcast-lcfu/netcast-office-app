@@ -4,8 +4,8 @@
         </button>
     </div>
     <input ng-model="tag" class="tab-search" auto-focus-when="focus" placeholder="请输入搜索关键词" ng-model="searchInput">
-    <i class="icon ion-ios-search tab-search-cur"></i>
-    <i class="icon ion-close-circled tab-search-close-cur" ng-click="delete()"></i>
+    <!--<i class="icon ion-ios-search tab-search-cur"></i>-->
+    <i ng-hide="tag == ''" class="icon ion-close-circled tab-search-close-cur" ng-click="delete()"></i>
     <a class="tab-cancel-btn" ng-click="search()">搜索</a>
 </ion-header-bar>
 <ion-view>

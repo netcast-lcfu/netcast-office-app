@@ -13,7 +13,7 @@ define(['app'],function (app) {
             angular.element(tabs).addClass("tabs-item-hide");
         });
 
-        // Ñ¡ÔñÀàÐÍ
+        // é€‰æ‹©ç±»åž‹
         var type = ['friend', 'group', 'focus'];
         $scope.type = type[0];
         $scope.changeType = function(num) {
@@ -22,4 +22,4 @@ define(['app'],function (app) {
 
     }]);
 });
-    
+
