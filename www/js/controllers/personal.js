@@ -13,15 +13,17 @@ define(['app', 'js/utils/citySelect'],function (app, CitySelect) {
                     // add cancel code..
                 },
                 buttonClicked: function(index) {
+                    //下标从0开始
+                    console.log('You click index is '+index);
                     return true;
                 }
             });
-        }
+        };
 
         //显示地址选择
         $scope.template = {
             area:""
-        }
+        };
         $scope.showCitySelect = function() {
             CitySelect.init({
                 element: ".js-citySelestNode",
@@ -45,7 +47,7 @@ define(['app', 'js/utils/citySelect'],function (app, CitySelect) {
                 url: 'data/city.json'
             })
 
-        }
+        };
     }]);
-   
+
 });
