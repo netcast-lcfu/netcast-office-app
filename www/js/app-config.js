@@ -11,7 +11,7 @@ define(['app'], function(app){
             // Allow loading from our assets domain.  Notice the difference between * and **.
             'http://srv*.assets.example.com/**'
           ]);
-          
+
           /*    // The blacklist overrides the whitelist so the open redirect here is blocked.
           *    $sceDelegateProvider.resourceUrlBlacklist([
           *      'http://myapp.example.com/clickThru**'
@@ -23,8 +23,8 @@ define(['app'], function(app){
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
-              cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-              cordova.plugins.Keyboard.disableScroll(true);
+              cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
+              cordova.plugins.Keyboard.disableScroll(false);
 
             }
             if (window.StatusBar) {
