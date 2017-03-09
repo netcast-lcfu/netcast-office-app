@@ -376,6 +376,17 @@ define(['app'], function (app) {
             }
           }
         })
+        // 扫码测试页面
+        .state('tab.testMap', {
+          url: '/testMap',
+          views: {
+            'tab-mine': {
+              templateUrl: 'templates/test/testMap.html',
+              controller: 'mapCtrl',
+              controllerUrl: 'js/controllers/map.js'
+            }
+          }
+        })
 
       $urlRouterProvider.otherwise("index");
 
