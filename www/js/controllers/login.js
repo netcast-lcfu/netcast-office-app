@@ -13,9 +13,12 @@ define(['app'],function (app) {
                     password:''
                 }
             }
+
         });
 
         $scope.login = function() {
+            console.log('name:'+$scope.user.name);
+            console.log('password:'+$scope.user.password);
             location.href = "#/tab/home";
             return;
 
