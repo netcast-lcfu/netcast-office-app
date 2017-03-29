@@ -456,6 +456,7 @@
   font-size: 15px;
   color: #333333;
   position: absolute;
+  cursor: pointer;
   right: 2%;
   bottom: 12px; }
 

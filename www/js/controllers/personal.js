@@ -42,10 +42,10 @@ define(['app', 'js/utils/citySelect'],function (app, CitySelect) {
                 initComplete: function(data) {
                     if ($scope.template.area != '') {
                         var data = $scope.template.area.split('，');
-                        CitySelect.set(data)
+                        CitySelect.set(data);
                     } else {
                         $scope.$apply(function() {
-                            $scope.template.area = data.join('，')
+                            $scope.template.area = data.join('，');
                         })
                     }
 

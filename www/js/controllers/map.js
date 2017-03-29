@@ -75,7 +75,7 @@ define(['app', 'js/utils/citySelect'], function (app, CitySelect) {
       var deferred = $q.defer();
 
       if (!navigator.geolocation) {
-        console.log("不支持");
+        console.log("not supported");
         return;
       }
       console.log("start");

@@ -21,7 +21,11 @@ define(['app'],function (app) {
                 ]
             });
             myPopup.then(function(res) {
-                console.log('Tapped!', res);
+                if(res){
+                  console.log('Comment is ', res);
+                }else{
+                  console.log('Comment cancel');
+                }
             });
         };
 
